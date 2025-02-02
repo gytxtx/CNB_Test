@@ -26,6 +26,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install pywin32==306  # 安装 pywin32 版本 306
 
+    - name: Verify Python version
+      run: python --version  # 输出 Python 版本
+
     - name: Verify installation
       run: |
         pip show pywin32  # 输出 pywin32 安装的详细信息
